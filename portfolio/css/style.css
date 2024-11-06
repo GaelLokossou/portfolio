@@ -1,0 +1,305 @@
+/*  rendre la page web a zero pour nous permettre de defnir nos propres marges*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem; /* équivalent à 20px */
+    font-style: oblique;
+    margin-right: 200px;
+}
+
+.nav-bar{
+    background-color: #000;
+    padding: 10px 5% 10px 5%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar .menu{
+    margin-right: 30px;    
+}
+
+.menu a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    color: rgba(255, 255, 255, 0.922);
+}
+
+a img{
+    height: 20px; /* Ajuste la hauteur de l'icône pour correspondre à la barre de recherche */
+    vertical-align: middle; /* Aligne l'image au milieu verticalement */
+    cursor: pointer;
+    padding-right: 30px;
+}
+
+.acceuil .description p{
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+.acceuil {
+    height: 60vh; /* Hauteur de la section */
+    color: white; /* Couleur du texte */
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.acceuil-div {
+    display: flex; /* Utiliser Flexbox */
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espacement entre les éléments */
+    align-items: center;
+}
+
+.description, .logo-anim {
+    flex: 1; /* Chaque élément prend 1 part égale de l'espace */
+    max-width: 45%; /* Limite la largeur pour que les deux tiennent côte à côte */
+    margin: 10px; /* Ajoute un peu d'espace autour des éléments */
+}
+
+.btn{
+    height: 35px;
+    width: 140px;
+    color: #fff;
+    background-color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-color: #000;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.logo-anim img {
+    max-width: 100%; /* Image responsive */
+    height: auto;
+}
+
+.competence {
+    background-color: #ede6ed;
+    height: 32vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.skill{
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.skill p{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-align: center;
+    color: black;
+}
+
+.img-p{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.img-p img{
+    height: 20px;
+    padding-right: 3px;
+}
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255, 252, 252, 0.7);
+}
+.inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 252, 252, 0.7),
+                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+#number{
+    font-weight: 600;
+    color: #555;
+}
+
+.svg-1 circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: an 2s linear forwards;
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes an{
+    100%{
+        stroke-dashoffset: 165;
+    }
+}
+
+#number-1{
+    font-weight: 600;
+    color: #555;
+}
+
+.svg-2 circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: an-1 2s linear forwards;
+}
+
+@keyframes an-1{
+    100%{
+        stroke-dashoffset: 254;
+    }
+}
+
+#number-2{
+    font-weight: 600;
+    color: #555;
+}
+
+.svg-3 circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: an-2 2s linear forwards;
+}
+
+@keyframes an-2{
+    100%{
+        stroke-dashoffset: 94;
+    }
+}
+
+#number-3{
+    font-weight: 600;
+    color: #555;
+}
+
+.svg-4 circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: an-3 2s linear forwards;
+}
+
+@keyframes an-3{
+    100%{
+        stroke-dashoffset: 300;
+    }
+}
+
+#number-4{
+    font-weight: 600;
+    color: #555;
+}
+
+.svg-5 circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: an-4 2s linear forwards;
+}
+
+@keyframes an-4{
+    100%{
+        stroke-dashoffset: 94;
+    }
+}
+
+
+.formulaire{
+    width: 590px;
+    height: 360px;
+    color: #00000040;
+    background-color: #f7f0f0d5;
+    border-radius: 20px;
+    margin-top: 30px;
+    border: 1px solid rgb(255, 252, 252);
+}
+
+.formulaire p{
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.formulaire div{
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+.formulaire div label{
+    padding-bottom: 10px;
+}
+
+.formulaire div input{
+    border: 1px solid #555;
+    height: 32px;
+    border-radius: 5px;
+    width: 500px;
+}
